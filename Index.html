@@ -20,12 +20,12 @@
             font-size:1.8em;
         }
 
-        .topContainer{
+        #topContainer{
             position:relative;
             height:100%;
             width:100%;
             background-size: cover;
-            background-image:url("Graduation.jpg");
+            background-image:url("aboutmeRight.jpg");
 
         }
 
@@ -75,7 +75,7 @@
             color:white;
         }
 
-        #topeRow h1{
+        #topRow h1{
             font-size:300%;
 
         }
@@ -97,7 +97,7 @@
         }
 
         #footer{
-            background-color:white
+            background-color:#282828 ;
             width:100%;
         }
 
@@ -142,22 +142,77 @@
             position: relative;
         }
 
+        #SRNLogo{
+            height:100px;
+            width:100px;
+            text-align: center;
+            margin-left: 45%;
+            padding-bottom:0;
+        }
+        #theHillLogo{
+            height:100px;
+            width:200px;
+            text-align: center;
+            margin-left: 42%;
+            padding-bottom:0;
+        }
+
+        #SCESLogo{
+            height:100px;
+            width:100px;
+            text-align: center;
+            margin-left: 45%;
+            margin-bottom:0;
+        }
         .pshift{
             margin-left:50%;
             text-align: center;
         }
        
+        .ulWorkShift{
+            margin-left: 17.5%;
+        }
+
+        #aboutMe{
+            height: 1000%;
+            text-align: center;
+        }
+
+        .footText{
+            color:white;
+        }
+
+        .workText{
+            font-size: 80%;
+        }
+
+        #quote{
+            font-size:130%;
+            text-shadow:2px 2px black;
+        }
+
+        .line{
+            width: 80%;
+            margin-top: 30px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 50px;
+            height: 1px;
+            background: #fff;
+            opacity: 0.5;
+        }
     </style>
 
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar-collapse">
 
     <!--Navigation-->
     <div class="navbar navbar-inverse navbar-fixed-top ">
 
                 <a class="navbar-brand">
-                    <img id="logo" src="MEBasic.jpg" title="Mercillo"></img> 
+                  <img id="logo" src="MEBasic.jpg" title="Mercillo"></img>
                    <p id="logo_text"> Marlon Ercillo </p>
+
                 </a>
         <div class="container">
             <div class="navbar-header">
@@ -171,10 +226,10 @@
 
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#home">About</a></li>
-                    <li><a href="#about">Experience</a></li>
-                    <li><a href="#download">Skills</a></li>
-                    <li><a href="#download">Contact</a></li>
+                    <li class="active"><a href="#aboutContainer">About</a></li>
+                    <li><a href="#experienceContainer">Experience</a></li>
+                    <li><a href="#skillsContainer">Skills</a></li>
+                    <li><a href="#footer">Contact</a></li>
                 </ul>
 
 
@@ -183,11 +238,11 @@
     </div>
 
     <!--Home Section-->
-    <div class="container contentContainer topContainer">
+    <div class="container contentContainer" id="topContainer">
         <div class="row">
             <div class="col-md-6 col-md-offset-3" id="topRow">
                 <h1 class="text textShadow ">Marlon Keith Ercillo</h1>
-
+                <p id="quote"><i>"I can do all things..."</i></p>
 
             <!--<form>
                 <div class="input-group">
@@ -206,44 +261,33 @@
     </div>
 
     <!--About Section-->
-     <div class="container contentContainer" id="experienceContainer">
-            <div class="row">
-                <h1 class="title center"> About </h1>
-
-
-            <div class="row center">
-                <p class="text textShadowGrey">Seeking opportunities and growth in mobile and web development</p>
-                <p class="text center textShadowGrey">Born in Oakland, CA</p>
-
-               <!-- <div class="col-md-6 center" id="pshift">
-                     <p > I grew up in a small town in Antioch, California at the age of 3. I had high hopes of becoming a Dominoes delivery driver because I loved pizza so much. Eventually I knew that I had bigger ambitions that I wanted to pursue. In everything I did, I always had one value that stayed the same: "Work smarter, not harder".</p>
-
-                     <p> I always saw myself wishing that I had more time to do things that I loved to do, this meant managing my time in a way where I can finish all my homework at school, so when I came home I could play sports and video games. That way whenever my Mom would ask "Are you done with your homework?" I could show her it and be on with my day. Now does that mean I was able to retain everything? Absolutely.</p>
-
-                     <p> I graduated Deer Valley High School being the top 3% of my class. I was able to go to the University of California of Irvine under the Elgibility in the Local Context Program (ELC). Although I am still working towards my degree in Computer Science, I can say that I have gotten the most out of college experience and have no regrets. I would not have been able to survive my time at UC Irvine if I did not know how to manage my time efficiently. I worked in multiple jobs at campus, was a captain of my previous dance team, and network with multiple organizations and people to help me with the challenges that I will face in the real world.</p>
-                </div>
-            -->
-
-            <div class="accordian col-md-8 " id="accordion2">
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle collapsed pshift" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                        Interested in my autobiography?
-                        </a>
-                    </div>
-                    <div id="collapseOne" class="accordion-body collapse">
-                        <div class="accordion-inner pshift" >
-                             <p> I grew up in a small town in Antioch, California at the age of 3. I had high hopes of becoming a Dominoes delivery driver because I loved pizza so much. Eventually I knew that I had bigger ambitions that I wanted to pursue. In everything I did, I always had one value that stayed the same: "Work smarter, not harder".</p>
-
-                             <p> I always saw myself wishing that I had more time to do things that I loved to do, this meant managing my time in a way where I can finish all my homework at school, so when I came home I could play sports and video games. That way whenever my Mom would ask "Are you done with your homework?" I could show her it and be on with my day. Now does that mean I was able to retain everything? Absolutely.</p>
-
-                             <p> I graduated Deer Valley High School being the top 3% of my class. I was able to go to the University of California of Irvine under the Elgibility in the Local Context Program (ELC). Although I am still working towards my degree in Computer Science, I can say that I have gotten the most out of college experience and have no regrets. I would not have been able to survive my time at UC Irvine if I did not know how to manage my time efficiently. I worked in multiple jobs at campus, was a captain of my previous dance team, and network with multiple organizations and people to help me with the challenges that I will face in the real world.</p>
-                        </div>
-                     </div>
-                </div>
+     <div class="container contentContainer" id="aboutContainer">
+             <div class="row">
+                <h1 class="title center"> About Me</h1>
+                <h4 class="center">Born in Oakland, CA and currently living in Orange County.
+                <div class="line"></div>
             </div>
-        </div>
-    </div>
+           
+            <div class="row center">
+
+                <div class="col-md-3 col-md-offset-1">
+                <h4 class> Versatile </h4>
+                 <p >I have a wide array of talents and skills that I incorporate on a daily basis. Whether I am providing a creative thought, ensuring a leadership role, or bringing out the best in people; I am well aware of my situations and can adapt quickly.</p>
+                </div>
+
+                <div class="col-md-4 ">
+                <h4> Ambitious </h4>
+                 <p>I am eager to learn and try new things. Whether it be new food, a skill, or even something out of my comfort zone. I am goal oriented and thrive off of motivation and success. I believe that the best way to grow is put yourself in an uncomfortable situation.</p>
+                </div>
+
+                <div class="col-md-3 ">
+                <h4> Entertainer </h4>
+                 <p>I can be a little quiet at first,but give me the spotlight and I love to entertain people. I am a DJ, a dancer, a musical enthusiast and a magician. I believe that life is too short to not appreciate the value of entertainment. </p>
+                </div>
+
+
+            </div>       
+    
      </div> 
 
 
@@ -255,126 +299,177 @@
     </div> 
 
      <!--Experience Section-->
-    <div class="container contentContainer" id="experienceContainer">
+    <div class="container contentContainer workText" id="experienceContainer">
             <div class="row">
-                <h1 class="title center"> Experiences </h1>
-
+                <h1 class="title center">Work Experience</h1>
+                 <div class="line"></div>
             </div>
 
             <div class="row center">
-                <div class="col-md-4 marginTop marginBottom">
-                    <h2><span class="glyphicon glyphicon-wrench"></span> Secured Retail Networks</h2>
-                    <p class="subtitle textShadowGrey"> Junior Network Engineer</p>
-                    <p class="subtitle textShadowGrey"> June 2015-Present</p>
-                    <ul>
+
+                <div class="col-md-6 col-md-offset-3 center marginBottom">
+                    <h2>Secured Retail Networks</h2>
+                    <p class="subtitle"> Junior Network Engineer</p>
+                    <p class="subtitle"> June 2015 - Present</p>
+                    <ul class="ulWorkShift ">
                         <li>Configuring and setting up Firewalls and switches</li>
                         <li>Creating scripts to generate configurations</li>
                         <li>Handling with tech support</li>
                     </ul>
-                    <button class="btn btn-success">Sign up!</button>
-                </div>
 
-                <div class="col-md-4 marginTop marginBottom">
-                    <h2><span class="glyphicon glyphicon-off"></span> Header</h2>
-                    <p>A brief description of one of the best features of your app.</p>
-                    <button class="btn btn-success">Sign up!</button>
-                </div>
-
-                <div class="col-md-4 marginTop marginBottom">
-                    <h2><span class="glyphicon glyphicon-on"></span> Header</h2>
-                    <p>A brief description of one of the best features of your app.</p>
-                    <button class="btn btn-success">Sign up!</button>
                 </div>
             </div>
+
+            <div class="row">
+
+
+                <div class="col-md-6 col-md-offset-3 center marginBottom">
+                    <h2>The Hill Marketing</h2>
+                    <p class="subtitle">Web and Video Specialist</p>
+                    <p class="subtitle">July 2013 - January 2014</p>
+                    <ul class="ulWorkShift">
+                        <li>Managing The Hill's ELITE program website</li>
+                        <li>Creating motion graphics and short videos</li>
+                        <li>Videographer and editor for special on campus events</li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-6 col-md-offset-3 center marginBottom">
+                    <h2>Student Center and Event Services</h2>
+                    <p class="subtitle">Operations Crew Lead Level 3 Member</p>
+                    <p class="subtitle"> October 2011 - July 2014</p>
+                    <ul class=" ulWorkShift">
+                        <li>Understanding set up of audio and video equipment</li>
+                        <li>Setting up and dealing with events in a timely manner</li>
+                        <li>Leading and distributing work load to a team of students</li>
+                    </ul>
+
+                </div>
+            </div>
+
      </div> 
 
     <!--Skills Section-->
     <div class="container contentContainer" id="skillsContainer">
             <div class="row">
                 <h1 class="title center"> Skills </h1>
+                <div class="line"></div>
+            </div>
+
+            <div class="row">
+            <div class="col-md-3 col-md-offset-2">
+                <h1 class="lead center">Coding</h1>
+
+                <div class="row center">
+                    <div class="col-md-1 marginBottom">
+                        <img class="socialMediaLogo" src="img/skills/Coding/androidstudio.png"> Android Studio</img>
+                    </div>
+
+                    <div class="col-md-1 col-md-offset-6 marginBottom">
+                        <img class="socialMediaLogo" src="img/skills/Coding/eclipse.png">Eclipse</img>
+                    </div>
+                </div>
+
+                <div clas="row center">
+
+                    <div class="col-md-1  marginBottom">
+                        <img class="socialMediaLogo" src="img/skills/Coding/wordpresstrans.png">Word Press</img>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-3 col-md-offset-2">
+                <h1 class="lead center">Languages</h1>
+
+                <div class="row center">
+                    <div class="col-md-1 marginBottom">
+                         <img class="socialMediaLogo" src="img/skills/Coding/Languages/css2.png">CSS</img>
+                    </div>
+
+                    <div class="col-md-1 col-md-offset-6 marginBottom">
+                       <img class="socialMediaLogo" src="img/skills/Coding/Languages/html2.png">HTML</img>
+                    </div> 
+                </div>
+
+                <div class="row center">
+                   <div class="col-md-1 marginBottom">
+                         <img class="socialMediaLogo" src="img/skills/Coding/Languages/javascript.png">Javascript</img>
+                  </div>
+
+                   <div class="col-md-1 col-md-offset-6 marginBottom">
+                           <img class="socialMediaLogo" src="img/skills/Programs/bootstrap.png">Bootstrap</img>
+                    </div>
+                 </div>
+            </div>
+
+        </div>
+
+            <div class="row center">
+                <h1 class="lead center">Programs</h1>
+
+                <div class="col-md-2 col-md-offset-2 marginBottom">
+                     <img class="socialMediaLogo" src="img/skills/Programs/ae2.png"> Adobe After Effects</img>
+                </div>
+
+                <div class="col-md-2 col-md-offset-1 marginBottom">
+                      <img class="socialMediaLogo" src="img/skills/Programs/premiere.png">Adobe Premiere</img>
+                </div>
+
+                <div class="col-md-2 col-md-offset-1 marginBottom">
+                     <img class="socialMediaLogo" src="img/skills/Programs/sonyvegas.png">Sony Vegas</img>
+                </div>
             </div>
 
             <div class="row center">
-                    <h1 class="lead center"> Coding</h1>
-                <div class="col-md-4 marginTop marginBottom">
-                    <img class="socialMediaLogo" src="img/skills/Coding/androidstudio.png"> Android Studio</img>
-                </div>
-
-                <div class="col-md-4 marginTop marginBottom">
-                    <img class="socialMediaLogo" src="img/skills/Coding/eclipse.png">Eclipse</img>
-                </div>
-
-                <div class="col-md-4 marginTop marginBottom">
-                    <img class="socialMediaLogo" src="img/skills/Coding/wordpresstrans.png">Word Press</img>
-                </div>
-
-            </div>
-
-            <div class="row center">
-                <h1 class="lead center"> Languages</h1>
-                <div class="col-md-3 marginTop marginBottom">
-                    <img class="socialMediaLogo" src="img/skills/Coding/Languages/css2.png">CSS</img>
-                </div>
-
-                <div class="col-md-3 marginTop marginBottom">
-                    <img class="socialMediaLogo" src="img/skills/Coding/Languages/html2.png">HTML</img>
-                </div>
-
-                <div class="col-md-3 marginTop marginBottom">
-                    <img class="socialMediaLogo" src="img/skills/Coding/Languages/javascript.png">Javascript</img>
-                </div>
-
-                <div class="col-md-3 marginTop marginBottom">
-                    <img class="socialMediaLogo" src="img/skills/Programs/bootstrap.png">Bootstrap</img>
-                </div>
-
-            <div class="row center">
-                <h1 class="lead center"> Programs</h1>
-                <div class="col-md-3 marginTop marginBottom">
-                    <img class="socialMediaLogo" src="img/skills/Programs/aftereffectstran.jpg"> Adobe After Effects</img>
-                </div>
-
-                <div class="col-md-3 marginTop marginBottom">
-                    <img class="socialMediaLogo" src="img/skills/Programs/premiere.png">Adobe Premiere</img>
-                </div>
-
-                <div class="col-md-3 marginTop marginBottom">
-                    <img class="socialMediaLogo" src="img/skills/Programs/sonyvegas.png">Sony Vegas</img>
-                </div>
-
-                <div class="col-md-3 marginTop marginBottom">
+                <div class="col-md-2 col-md-offset-2 marginBottom">
                     <img class="socialMediaLogo" src="img/skills/Programs/audition.png">Adobe Audition</img>
                 </div>
-                <div class="col-md-4 marginTop marginBottom">
+                <div class="col-md-2 col-md-offset-1 marginBottom">
                     <img class="socialMediaLogo" src="img/skills/Programs/fruityloops.png">Fruity Loops</img>
                 </div>
 
-
-                <div class="col-md-4 marginTop marginBottom">
+                <div class="col-md-2 col-md-offset-1 marginBottom">
                     <img class="socialMediaLogo" src="img/skills/Programs/illustrator.png">Adobe Illustrator</img>
                 </div>
 
-                <div class="col-md-4 marginTop marginBottom">
-                    <img class="socialMediaLogo" src="img/skills/Programs/officetran.png">Microsoft office</img>
-                </div>
             </div>
+
+            </div>
+
+
      </div>
 
-     <div class="container contentContainer" id="footer">
-        <div class="row">
-            <div class="col-lg-4 col-lg-offset-5">
-                <img class="socialMediaLogo center" src="img/socialmedia/github.png" <a href="facebook.com"></a></img>
-                <img class="socialMediaLogo center" src="img/socialmedia/linkedin.jpg"></img>
-                <img class="socialMediaLogo center" src="img/socialmedia/soundcloud.jpg"></img>
-                <img class="socialMediaLogo center" src="img/socialmedia/twitter.png"></img>
+     <div class="container center">
+     </div>
+
+<footer>
+     <div class="container center" id="footer">
+        <h1 class="footText">Contact</h1>
+    
+
+        <div class="row center">
+            <div class="col-lg-4 col-lg-offset-4">
+                <a href="http://www.github.com/mercillo"><img class="socialMediaLogo center" src="img/socialmedia/github.png"></img></a>
+
+                <a href="http://www.linkedin.com/pub/marlon-ercillo/96/575/580/en"><img class="socialMediaLogo center" src="img/socialmedia/linkedin.png"></img> </a>
+
+                <a href="http://www.soundcloud.com/marky-ercillo"><img class="socialMediaLogo center" src="img/socialmedia/soundcloud.png"></img></a>
+
+                <a href="http://www.twitter.com/mercillo"><img class="socialMediaLogo center" src="img/socialmedia/twitter.png"></img></a>
             </div>
+
         </div>
+    </br>
+        <p class="footText">Copyright &copy; Mercillo 2015</p>
+        <p class="subtitle footText">Photo Credits to Ariana Bautista and Ferdinand Ercillo</p>
 
     </div>
-
-
-
-
+</footer>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
